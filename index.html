@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./images/favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./mediaqueries.css" />
+    <title>Ibe Okorafor</title>
+  </head>
+  <body>
+    <!--*** Header section for Navbar ***-->
+    <header>
+      <nav class="navbar">
+        <div class="logo">DevIbe</div>
+        <div class="burger" onclick="toggleNav()">&#9776;</div>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <!-- <li><a href="#resume">Resume</a></li> -->
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!--*** Header section stops ***-->
+
+    <!--*** Hero Section ***-->
+    <section class="hero-section">
+      <div class="hero-container">
+        <div class="hero-content" data-aos="fade-right" data-aos-delay="0">
+          <p>Hello, I'm</p>
+          <h2>Ibe Okorafor</h2>
+          <p>A Front-end Web Developer</p>
+          <p>
+            I am passionate about crafting visually engaging and responsive
+            websites. Mastering technologies which ensure seamless user
+            experiences and intuitive interfaces.
+          </p>
+          <div class="hero-icons">
+            <a
+              href="https://www.linkedin.com/in/okorafor-ibe-1b79192b7/"
+              target="_blank"
+              ><i class="fa-brands fa-linkedin-in"></i
+            ></a>
+            <a href="https://github.com/ibeO-GH" target="_blank"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+            <a href="https://x.com/ibeO_X" target="_blank"
+              ><i class="fa-brands fa-x-twitter"></i
+            ></a>
+          </div>
+          <div class="contact-btn">
+            <button type="submit"><a href="#contact">Contact Me</a></button>
+          </div>
+        </div>
+
+        <div class="hero-img" data-aos="fade-left" data-aos-delay="200">
+          <img src="./images/profilepic.jpeg" alt="my-picture" />
+        </div>
+      </div>
+    </section>
+    <!--*** End of hero section ***-->
+
+    <!--*** about section ***-->
+    <section id="about">
+      <div class="about-img" data-aos="fade-right" data-aos-delay="0">
+        <img src="./images/bgbanner2.jpeg" alt="my picture" />
+      </div>
+      <div class="about-content" data-aos="fade-left" data-aos-delay="200">
+        <h1>About Me</h1>
+        <p>
+          I am a Front-end web developer. I am proficient in HTML, CSS, and
+          JavaScript, and have a little knowledge on React. I excel at
+          transforming designs into dynamic, interactive websites with a drive
+          for smooth functionality, aesthetic appeal, and effective user
+          engagement across various devices. I&apos;m eager to gain real-world
+          experience, where I can apply my skills and continue to grow in the
+          field of web development.
+        </p>
+      </div>
+    </section>
+    <!--*** About section ends ***-->
+
+    <!---*** Skills section begins ***-->
+    <section id="skills">
+      <h2>Skills & Tools</h2>
+
+      <div class="skill-img" data-aos="fade-up">
+        <div class="img1">
+          <img src="./images/html5.png" alt="html logo" />
+          <p>HTML</p>
+        </div>
+        <div class="img1">
+          <img src="./images/css3.png" alt="css logo" />
+          <p>CSS</p>
+        </div>
+        <div class="img1">
+          <img src="./images/js.png" alt="js logo" />
+          <p>Javascript</p>
+        </div>
+        <div class="img1">
+          <img src="./images/git.png" alt="git logo" />
+          <p>git</p>
+        </div>
+        <div class="img1">
+          <img src="./images/github.png" alt="github logo" />
+          <p>github</p>
+        </div>
+        <div class="img1">
+          <img src="./images/vscode.png" alt="vscode logo" />
+          <p>Vs code</p>
+        </div>
+        <div class="img1">
+          <img src="./images/vercel.png" alt="vercel logo" />
+          <p>vercel</p>
+        </div>
+        <div class="img1">
+          <img src="./images/slack.png" alt="slack logo" />
+          <p>Slack</p>
+        </div>
+      </div>
+    </section>
+    <!--*** Skills section Ends ***-->
+
+    <!--*** Project section begins ***-->
+    <section id="projects">
+      <h2>Projects</h2>
+
+      <div class="project">
+        <div class="image-container">
+          <img src="./images/ToDoList.png" alt="project1" class="project-img" />
+          <div class="overlay" data-modal="modal1">
+            <p>Todo List</p>
+            <p>
+              View Demo <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </p>
+          </div>
+        </div>
+
+        <div class="image-container">
+          <img
+            src="./images/healthguard.png"
+            alt="project2"
+            class="project-img"
+          />
+          <div class="overlay" data-modal="modal2">
+            <p>Healguard <br />Medical Health website</p>
+            <p>
+              View Demo <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </p>
+          </div>
+        </div>
+
+        <div class="image-container">
+          <img
+            src="./images/neonexcellence.png"
+            alt="project3"
+            class="project-img"
+          />
+          <div class="overlay" data-modal="modal3">
+            <p>Neon Excellence</p>
+            <p>
+              View Demo <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </p>
+          </div>
+        </div>
+
+        <div class="image-container">
+          <img src="./images/wattos.png" alt="project4" class="project-img" />
+          <div class="overlay" data-modal="modal4">
+            <p>Wattos word</p>
+            <p>
+              View Demo <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </p>
+          </div>
+        </div>
+
+        <div class="image-container">
+          <img
+            src="./images/portfolio.png"
+            alt="project5"
+            class="project-img"
+          />
+          <div class="overlay" data-modal="modal5">
+            <p>My Portfolio</p>
+            <p>
+              View Demo <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </p>
+          </div>
+        </div>
+
+        <div class="image-container">
+          <img src="./images/jobAppli.png" alt="project6" class="project-img" />
+          <div class="overlay" data-modal="modal6">
+            <p>Job Application Form</p>
+            <p>
+              View Demo <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </p>
+          </div>
+        </div>
+
+        <div class="image-container">
+          <img
+            src="./images/Shop_Cart.png"
+            alt="project7"
+            class="project-img"
+          />
+          <div class="overlay" data-modal="modal7">
+            <p>Shopping Cart</p>
+            <p>
+              View Demo <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </p>
+          </div>
+        </div>
+
+        <div class="image-container">
+          <img
+            src="./images/neonlogist.png"
+            alt="project8"
+            class="project-img"
+          />
+          <div class="overlay" data-modal="modal8">
+            <p>Neon Logistics</p>
+            <p>
+              View Demo <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </p>
+          </div>
+        </div>
+
+        <div class="image-container">
+          <img src="./images/burgerD.png" alt="project9" class="project-img" />
+          <div class="overlay" data-modal="modal9">
+            <p>Burgar Delight</p>
+            <p>
+              View Demo <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </p>
+          </div>
+        </div>
+
+        <div class="image-container">
+          <img
+            src="./images/accessMgt.png"
+            alt="project10"
+            class="project-img"
+          />
+          <div class="overlay" data-modal="modal10">
+            <p>User Access Management</p>
+            <p>
+              View Demo <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </p>
+          </div>
+        </div>
+
+        <div class="image-container">
+          <img
+            src="./images/chick_fil_A.png"
+            alt="project11"
+            class="project-img"
+          />
+          <div class="overlay" data-modal="modal11">
+            <p>chick_fil_A website</p>
+            <p>
+              View Demo <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </p>
+          </div>
+        </div>
+
+        <div class="image-container">
+          <img src="./images/theme.png" alt="project12" class="project-img" />
+          <div class="overlay" data-modal="modal12">
+            <p>Theme selection</p>
+            <p>
+              View Demo <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal 1 -->
+      <div id="modal1" class="modal">
+        <div class="modal-content">
+          <span class="close-btn">&times;</span>
+          <div class="modal-body">
+            <img src="./images/ToDoList.png" alt="project1" />
+            <p>
+              <span>Todo List Project</span><br />
+              A simple and interactive task management application designed to
+              help users stay organized by keeping track of their daily tasks.
+              This project allows users to manage their to-do list efficiently
+              by adding, deleting, and marking tasks as completed or not
+              completed.
+            </p>
+            <div class="buttons">
+              <a
+                href="https://ibeo-gh.github.io/TODO-List-Project/"
+                target="_blank"
+                ><button>View live</button></a
+              >
+              <a
+                href="https://github.com/ibeO-GH/TODO-List-Project"
+                target="_blank"
+                ><button>View on github</button></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal 2 -->
+      <div id="modal2" class="modal">
+        <div class="modal-content">
+          <span class="close-btn">&times;</span>
+          <div class="modal-body">
+            <img src="./images/healthguard.png" alt="project2" />
+            <p>
+              <span>Health Guard - Medical Health Website</span><br />This
+              project is a collaborative effort involving frontend developers,
+              UI/UX designers, and project management. Health Guard is a
+              comprehensive medical health platform designed to provide users
+              with a variety of healthcare services, all from the convenience of
+              their devices.
+            </p>
+            <div class="buttons">
+              <a href="https://health-guard-rho.vercel.app/" target="_blank"
+                ><button>View live</button></a
+              >
+              <a href="https://github.com/ibeO-GH/HealthGuard" target="_blank"
+                ><button>View on github</button></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal 3 -->
+      <div id="modal3" class="modal">
+        <div class="modal-content">
+          <span class="close-btn">&times;</span>
+          <div class="modal-body">
+            <img src="./images/neonexcellence.png" alt="project3" />
+            <p>
+              <span>Neon Excellence</span><br />NEON excellence School is one of
+              Africa's leading schools, offering a distinctive and progressive
+              approach to learning that engages students in the classroom and
+              with the world around them.
+            </p>
+            <div class="buttons">
+              <a
+                href="https://ibeo-gh.github.io/Neon-Excellence/"
+                target="_blank"
+                ><button>View live</button></a
+              >
+              <a
+                href="https://github.com/ibeO-GH/Neon-Excellence"
+                target="_blank"
+                ><button>View on github</button></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal 4 -->
+      <div id="modal4" class="modal">
+        <div class="modal-content">
+          <span class="close-btn">&times;</span>
+          <div class="modal-body">
+            <img src="./images/wattos.png" alt="project4" />
+            <p>
+              <span>Wattos's Words Website</span><br />Wattos's Words is a
+              sports, music, life, and adventure blog website. Watto'sWords aims
+              to be a little different to most other blogs, offering a fresh
+              perspective and covering a wide range of interests and subjects.
+            </p>
+            <div class="buttons">
+              <a href="https://ibeo-gh.github.io/Wattos-word/"
+                ><button>View live</button></a
+              >
+              <a href="https://github.com/ibeO-GH/Wattos-word"
+                ><button>View on github</button></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal 5 -->
+      <div id="modal5" class="modal">
+        <div class="modal-content">
+          <span class="close-btn">&times;</span>
+          <div class="modal-body">
+            <img src="./images/portfolio.png" alt="project5" />
+            <p>
+              <span>My portfolio</span><br />Welcome to my personal portfolio
+              website, where creativity meets innovation! This project
+              represents the culmination of my dedication to web development and
+              design. It serves as a showcase of my skills, passion, and the
+              projects I've had the privilege to work on.
+            </p>
+            <div class="buttons">
+              <a href="https://ibeo-gh.github.io/Portfolio/" target="_blank"
+                ><button>View live</button></a
+              >
+              <a href="https://github.com/ibeO-GH/Portfolio" target="_blank"
+                ><button>View on github</button></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal 6 -->
+      <div id="modal6" class="modal">
+        <div class="modal-content">
+          <span class="close-btn">&times;</span>
+          <div class="modal-body">
+            <img src="./images/jobAppli.png" alt="project6" />
+            <p>
+              <span>Job Application Form</span><br />This was a group project
+              developed with some JS functionalities. Allows theme change and
+              validation of user credentials upon login.
+            </p>
+            <div class="buttons">
+              <a
+                href="https://ibeo-gh.github.io/group-5-Job-Application-Form/"
+                target="_blank"
+                ><button>View live</button></a
+              >
+              <a
+                href="https://github.com/ibeO-GH/group-5-Job-Application-Form"
+                target="_blank"
+                ><button>View on github</button></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal 7 -->
+      <div id="modal7" class="modal">
+        <div class="modal-content">
+          <span class="close-btn">&times;</span>
+          <div class="modal-body">
+            <img src="./images/Shop_Cart.png" alt="project7" />
+            <p>
+              <span>Simple Shopping Cart</span><br />A simple shopping cart
+              project built as part of my JavaScript practice and learning. This
+              project allows users to input an item name, price, and quantity,
+              and then calculates the total price for the items added to the
+              cart. It also determines whether the user qualifies for free
+              shipping based on the total price.
+            </p>
+            <div class="buttons">
+              <a href="https://ibeo-gh.github.io/Shopping-Cart/" target="_blank"
+                ><button>View live</button></a
+              >
+              <a href="https://github.com/ibeO-GH/Shopping-Cart" target="_blank"
+                ><button>View on github</button></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal 8 -->
+      <div id="modal8" class="modal">
+        <div class="modal-content">
+          <span class="close-btn">&times;</span>
+          <div class="modal-body">
+            <img src="./images/neonlogist.png" alt="project8" />
+            <p>
+              <span>Neon Logistics</span><br />Neon Logistics is the only
+              logistics & shipping partner you will ever need. Specialist
+              freight & logistics for events, art & express shipping.
+            </p>
+            <div class="buttons">
+              <a
+                href="https://ibeo-gh.github.io/Neon-Logistics/"
+                target="_blank"
+                ><button>View live</button></a
+              >
+              <a
+                href="https://github.com/ibeO-GH/Neon-Logistics"
+                target="_blank"
+                ><button>View on github</button></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal 9 -->
+      <div id="modal9" class="modal">
+        <div class="modal-content">
+          <span class="close-btn">&times;</span>
+          <div class="modal-body">
+            <img src="./images/burgerD.png" alt="project9" />
+            <p>
+              <span>Burgar Delight</span><br />This Burgar Delight website
+              project is highly responsive with a clean and user-friendly
+              interface, designed to showcase a fictional burger restaurant. The
+              primary purpose of this project was to practice and enhance my web
+              development skills.
+            </p>
+            <div class="buttons">
+              <a
+                href="https://ibeo-gh.github.io/Burger-Delight/"
+                target="_blank"
+                ><button>View live</button></a
+              >
+              <a
+                href="https://github.com/ibeO-GH/Burger-Delight"
+                target="_blank"
+                ><button>View on github</button></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal 10 -->
+      <div id="modal10" class="modal">
+        <div class="modal-content">
+          <span class="close-btn">&times;</span>
+          <div class="modal-body">
+            <img src="./images/accessMgt.png" alt="project10" />
+            <p>
+              <span>User Access Management</span><br />A simple user access
+              management system. The system is responsive and was built using
+              HTML, CSS, and JavaScript. JavaScript was used for the
+              functionality to restrict access.
+            </p>
+            <div class="buttons">
+              <a
+                href="https://ibeo-gh.github.io/Grant-Access-Project/"
+                target="_blank"
+                ><button>View live</button></a
+              >
+              <a
+                href="https://github.com/ibeO-GH/Grant-Access-Project"
+                target="_blank"
+                ><button>View on github</button></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal 11 -->
+      <div id="modal11" class="modal">
+        <div class="modal-content">
+          <span class="close-btn">&times;</span>
+          <div class="modal-body">
+            <img src="./images/chick_fil_A.png" alt="project11" />
+            <p>
+              <span>Chick_fil_A website</span><br />This is Chick_fil_A
+              restaurant website which I recreated while prracticing
+              responsiveness.
+            </p>
+            <div class="buttons">
+              <a href="https://ibeo-gh.github.io/Chick_fil_A/" target="_blank"
+                ><button>View live</button></a
+              >
+              <a href="https://github.com/ibeO-GH/Chick_fil_A" target="_blank"
+                ><button>View on github</button></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal 12-->
+      <div id="modal12" class="modal">
+        <div class="modal-content">
+          <span class="close-btn">&times;</span>
+          <div class="modal-body">
+            <img src="./images/theme.png" alt="project12" />
+            <p>
+              <span>Theme Selection</span><br />This project allows users to
+              change the background color of the webpage by selecting. The
+              available themes are black, white, and blue. The project was
+              created for learning purposes to enhance web development skills.
+            </p>
+            <div class="buttons">
+              <a
+                href="https://ibeo-gh.github.io/Theme-Selection-Project/"
+                target="_blank"
+                ><button>View live</button></a
+              >
+              <a
+                href="https://github.com/ibeO-GH/Theme-Selection-Project"
+                target="_blank"
+                ><button>View on github</button></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- *** End of project section ***-->
+
+    <!-- *** Resume section*** -->
+    <!-- <div id="resume"><h2>Resume</h2></div>
+    <div id="resume-body">
+      <div class="resume-container">
+        <div class="resume-row">
+          <div class="col">
+            <header class="title">
+              <h2>EXPERIENCE</h2>
+            </header>
+
+            <div class="contents">
+              <div class="box">
+                <h4>2023-2024</h4>
+                <h3>Front-end Web Developer</h3>
+                <h2>Healthguard Capstone Project</h2>
+                <p>
+                  Collaborated with designers, a project manager, and front-end
+                  developers to create HealthGuard, a comprehensive website
+                  focused on health and wellness. As part of this capstone
+                  project, I worked on integrating design elements and ensuring
+                  the website's responsiveness and functionality across various
+                  devices. The project highlighted my ability to work
+                  effectively within a cross-functional team.
+                </p>
+              </div>
+
+              <div class="box">
+                <h4>2023-2024</h4>
+                <h3>Front-end Web Developer</h3>
+                <h2>To-Do List Application</h2>
+                <p>
+                  Designed and developed a to-do list application as a personal
+                  project to enhance my skills in front-end development. The
+                  application features a clean, intuitive interface for managing
+                  tasks, built using HTML, CSS, and JavaScript. this project
+                  reinforced my abilities in coding, problem-solving, and
+                  creating effective user interfaces.
+                </p>
+              </div>
+
+              <div class="box">
+                <h4>2023-2024</h4>
+                <h3>Front-end Web Developer</h3>
+                <h2>Restaurant Website (Personal Project)</h2>
+                <p>
+                  Developed a highly responsive restaurant website as part of a
+                  personal learning experience. The project involved creating a
+                  visually appealing and user-friendly interface using HTML,
+                  CSS, and JavaScript. the project enhanced my skills in
+                  front-end development and reinforced best practices for
+                  building dynamic, interactive websites.
+                </p>
+              </div>
+            </div>
+          </div> -->
+    <!--*** Experience section ends ***-->
+
+    <!-- *** Education section begins ***-->
+    <!-- <div class="col">
+            <header class="title">
+              <h2>EDUCATION</h2>
+            </header>
+
+            <div class="contents">
+              <div class="box">
+                <h4>2023-2024</h4>
+                <h3>
+                  Web Development Certificate<i class="fa-solid fa-link"></i>
+                </h3>
+                <h2>
+                  Vephla Institute
+                  <a href="https://vephlainstitute.com/" target="_blank"
+                    ><i class="fa-solid fa-link"></i
+                  ></a>
+                </h2>
+                <p>
+                  During this course, I gained comprehensive skills in front-end
+                  web development, focusing on HTML, CSS, and JavaScript. The
+                  program included both personal and group projects, allowing me
+                  to apply these technologies in real-world scenarios. This
+                  experience has equipped me with a strong foundation in web
+                  development and teamwork, enabling me to create responsive and
+                  visually appealing websites.
+                </p>
+              </div>
+
+              <div class="box">
+                <h4>2021-2023</h4>
+                <h3>
+                  Federal Polytechnic Bida, Niger State
+                  <a href="https://fedpolybida.edu.ng/" target="_blank"
+                    ><i class="fa-solid fa-link"></i
+                  ></a>
+                </h3>
+                <h2>Higher National Diploma (HND)</h2>
+                <p>
+                  My education in Business Administration and Management
+                  provided me with a solid foundation in organizational skills,
+                  strategic planning, and problem-solving. I graduated with a
+                  comprehensive understanding of business principles and
+                  management practices, which has enhanced my approach to
+                  project management and teamwork in web development.
+                </p>
+              </div>
+
+              <div class="box">
+                <h4>2017-2020</h4>
+                <h3>
+                  Federal Polytechnic Bida, Niger State
+                  <a href="https://fedpolybida.edu.ng/" target="_blank"
+                    ><i class="fa-solid fa-link"></i
+                  ></a>
+                </h3>
+                <h2>National Diploma (ND)</h2>
+                <p>
+                  During my National Diploma program in Business Administration
+                  and Management, I completed an IT internship in the ICT unit
+                  of an organization. This role allowed me to apply my academic
+                  knowledge in a practical setting, providing hands-on
+                  experience with IT systems and operations. It also enhanced my
+                  skills in technology and problem-solving.
+                </p>
+              </div>
+            </div>
+          </div> -->
+    <!-- *** Education section ends ***-->
+    <!-- </div>
+      </div>
+    </div> -->
+    <!-- *** Resume section ends ***-->
+
+    <!--*** Contact section starts ***-->
+    <section id="contact" data-aos="fade-up">
+      <form action="#" id="contact-form">
+        <h1>Contact</h1>
+        <label for="name">Full Name</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          class="input-control"
+          placeholder="Enter Name"
+        />
+        <label for="Email">Email Address</label>
+        <input
+          type="email"
+          name="email"
+          id="mail"
+          class="input-control"
+          placeholder="Enter Email"
+        />
+        <label for="text">Subject</label>
+        <input
+          type="text"
+          name="subject"
+          id="subject"
+          placeholder="Enter-subject"
+        />
+        <label for="message">Message</label>
+        <textarea
+          name="message"
+          id="message"
+          class="contact-msg"
+          rows="5"
+          placeholder="Enter Message"
+        ></textarea>
+        <button type="submit" class="btn-submit">Submit</button>
+        <div class="loader"><i class="fa-solid fa-circle-notch"></i></div>
+        <div class="form-message"></div>
+      </form>
+
+      <div class="contact-info">
+        <h3>Get In Touch</h3>
+        <p>
+          I am a web developer who is dedicated to providing high-quality,
+          user-friendly websites and web applications. I am committed to
+          ensuring that you are completely satisfied with your project.
+        </p>
+        <p>
+          I will personally review your message within 24 hours and provide you
+          with a tailored solution that meets your specific requirements. Thank
+          you for your trust!
+        </p>
+        <p>
+          <a href="tel:+2348138841658"
+            ><i class="fa-solid fa-phone"></i>&nbsp;(+234) 8138841658</a
+          >
+        </p>
+        <p>
+          <a href="mailto:ibe.okorafor@gmail.com"
+            ><i class="fa-solid fa-envelope"></i>&nbsp;ibe.okorafor@gmail.com</a
+          >
+        </p>
+        <div class="hero-icons">
+          <a
+            href="https://www.linkedin.com/in/okorafor-ibe-1b79192b7/"
+            target="_blank"
+            ><i class="fa-brands fa-linkedin-in"></i
+          ></a>
+          <a href="https://github.com/ibeO-GH" target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a href="https://x.com/ibeO_X" target="_blank"
+            ><i class="fa-brands fa-x-twitter"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+    <!--*** contact section ends ***-->
+
+    <!--***  footer section ***-->
+    <footer>
+      <h3>Copyright &copy; 2024 | All Rights reserved</h3>
+      <p>Developed by <span>Ibe Okorafor</span></p>
+    </footer>
+    <!--***  footer section ends***-->
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
