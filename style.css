@@ -25,7 +25,8 @@
 html {
   font-size: 62.5%;
   overflow-x: hidden;
-  background-color: var(--bg-color);
+  /* background-color: var(--bg-color); */
+  background-image: linear-gradient(120deg, #f5f4f4, #073050);
 }
 
 html::-webkit-scrollbar {
@@ -42,12 +43,13 @@ html::-webkit-scrollbar-thumb {
 
 /* Navbar styling */
 header {
-  background-color: var(--bg-color);
+  /* background-color: var(--bg-color); */
   position: fixed;
   width: 100%;
   z-index: 999;
   padding: 2rem 7rem;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+  background-image: linear-gradient(120deg, #f5f4f4, #073050);
 }
 .navbar {
   display: flex;
@@ -81,7 +83,8 @@ header {
   font-weight: bold;
 }
 .nav-links a:hover {
-  border-bottom: 2px solid var(--sub-color);
+  color: var(--main-color);
+  border-bottom: 2px solid var(--main-color);
 }
 
 /* Navbar styling Stop */
@@ -103,12 +106,13 @@ header {
 }
 .hero-content {
   width: 38%;
-  color: #444;
   margin-top: 50px;
 }
 .hero-content :nth-child(1) {
   margin-bottom: 10px;
   font-size: 3rem;
+  color: #777;
+  font-weight: 800;
 }
 .hero-content :nth-child(2) {
   color: var(--sub-color);
@@ -121,30 +125,33 @@ header {
   font-weight: bold;
   font-size: 2.8rem;
   margin-bottom: 15px;
-  color: #111;
+  color: #222;
 }
 .hero-content :nth-child(4) {
   line-height: 25px;
   font-weight: bold;
   font-size: 1.8rem;
   margin-bottom: 5px;
+  color: #444;
 }
 .hero-icons {
   margin-bottom: 8px;
 }
 .hero-icons .fa-linkedin-in,
 .hero-icons .fa-github {
-  font-size: 1.5rem;
-  border: 1px solid var(--sub-color);
+  font-size: 1.8rem;
+  border: 1px solid var(--main-color);
   padding: 8px;
   border-radius: 50%;
   margin-right: 5px;
+  color: var(--main-color);
 }
 .hero-icons .fa-x-twitter {
-  font-size: 1.4rem;
-  border: 1px solid var(--sub-color);
+  font-size: 1.8rem;
+  border: 1px solid var(--main-color);
   padding: 8px;
   border-radius: 50%;
+  color: var(--main-color);
 }
 a .fa-x-twitter,
 a .fa-linkedin-in,
@@ -186,7 +193,7 @@ a .fa-github {
 }
 .about-img img {
   width: 400px;
-  filter: grayscale(94%);
+  filter: grayscale(35%);
   border-radius: 15px;
 }
 .about-content {
@@ -542,36 +549,36 @@ form h1 {
   margin-bottom: 20px;
 }
 label {
-  color: #444;
+  color: #ddd;
   font-size: 1.5rem;
 }
 input {
   width: 50rem;
   padding: 15px 10px;
-  background-color: var(--main-color);
-  border: 1px solid var(--main-color);
+  background-color: var(--bg-color);
+  border: 1px solid var(--bg-color);
   border-radius: 5px;
   margin-bottom: 20px;
-  color: #eee;
+  color: #222;
   font-size: 2rem;
 }
 input::placeholder {
   font-size: 1.5rem;
 }
 textarea {
-  background-color: var(--main-color);
-  border: 1px solid var(--main-color);
+  background-color: var(--bg-color);
+  border: 1px solid var(--bg-color);
   border-radius: 5px;
   margin-bottom: 20px;
   padding: 10px;
   font-size: 2rem;
-  color: #eee;
+  color: #222;
 }
 textarea::placeholder {
   font-size: 1.5rem;
 }
 .btn-submit {
-  background-color: var(--main-color);
+  background-color: var(--sub-color);
   padding: 10px;
   border: none;
   border-radius: 5px;
@@ -582,7 +589,7 @@ textarea::placeholder {
   margin-bottom: 10px;
 }
 .btn-submit:hover {
-  background-color: var(--sub-color);
+  background-color: var(--main-color);
 }
 .loader {
   width: 100%;
@@ -642,13 +649,13 @@ textarea::placeholder {
 }
 .contact-info :nth-child(2) {
   font-size: 1.8rem;
-  color: #444;
+  color: #ccc;
   margin-bottom: 10px;
   line-height: 25px;
 }
 .contact-info :nth-child(3) {
   font-size: 1.8rem;
-  color: #444;
+  color: #ccc;
   margin-bottom: 35px;
   line-height: 25px;
 }
@@ -663,12 +670,13 @@ textarea::placeholder {
 .contact-info .fa-phone,
 .contact-info .fa-envelope {
   font-size: 2rem;
-  color: #444;
+  color: #ccc;
 }
 .contact-info .fa-linkedin-in,
 .contact-info .fa-github,
 .contact-info .fa-x-twitter {
   font-size: 1.6rem;
+  color: #ccc;
 }
 
 .contact-info :nth-child(4) a,
@@ -676,11 +684,17 @@ textarea::placeholder {
   text-decoration: none;
   font-size: 1.8rem;
 }
+
+.contact-info :nth-child(4) a:hover,
+.contact-info :nth-child(5) a:hover {
+  color: var(--main-color);
+}
 /* Contact section ends*/
 
 /* footer begins*/
 footer {
-  background-color: var(--bg-color);
+  /* background-color: var(--bg-color); */
+  background-image: linear-gradient(120deg, #f5f4f4, #073050);
   height: 15vh;
   display: flex;
   flex-direction: column;
@@ -690,12 +704,12 @@ footer {
 }
 footer h3 {
   font-size: 1.5rem;
-  color: #111;
+  color: #ccc;
   line-height: 30px;
 }
 footer p {
   font-size: 1.5rem;
-  color: #111;
+  color: #ccc;
   font-weight: bold;
 }
 footer p span {
