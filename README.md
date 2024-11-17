@@ -12,7 +12,7 @@ This is my portfolio that highlights my personal attributes and professional ski
 
 \*Implemented responsiveness for tablet and mobile screens
 
-## GitHub Pages -
+## GitHub Pages - https://ibeo-gh.github.io/New-Portfolio/
 
 ## Screenshot of how it looks
 
